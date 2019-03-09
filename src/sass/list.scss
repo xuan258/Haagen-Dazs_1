@@ -1,0 +1,31 @@
+@import 'public';
+/* 返回顶部 */
+.top_scroll{
+	left: 1216px;
+	display: none;
+	position: fixed;
+	z-index: 200;
+	top: 50%;
+	width: 144px;
+	.customer_service_online{
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		color: #eecd9c;
+		cursor: pointer;
+		background: url(img/top-bg.min.png) no-repeat;
+	}
+	.opration{
+		height: 47px;
+		line-height: 47px;
+		color: #955b24;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		background-position: 0 -79px;
+		cursor: pointer;
+		background: url(img/top-bg.min.png) no-repeat 0 -78px;
+	}
+}
