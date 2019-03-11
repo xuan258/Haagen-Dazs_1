@@ -207,3 +207,166 @@ a, u {
       .footer .footer_bottom p a {
         color: #b49759;
         padding-right: 12px; }
+
+/* 登录 */
+.login_all {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  overflow: hidden; }
+  .login_all .content {
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+    width: 980px;
+    margin: 0 auto;
+    background: url(img/background-indeximg.min.jpg) no-repeat center top;
+    padding: 20px 0; }
+    .login_all .content .wrap_center {
+      margin: 100px auto 208px auto;
+      border: 1px solid #dedede;
+      overflow: hidden;
+      background: #f9f7f1; }
+      .login_all .content .wrap_center .left {
+        width: 660px;
+        border: 1px solid #ccc;
+        float: left; }
+        .login_all .content .wrap_center .left .login_kind {
+          width: 100%;
+          height: 37px; }
+          .login_all .content .wrap_center .left .login_kind a {
+            background: #fff;
+            color: #aaa;
+            border-bottom: 0;
+            display: block;
+            float: left;
+            width: 329px;
+            height: 37px;
+            line-height: 37px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-right: 1px solid #dedede; }
+        .login_all .content .wrap_center .left .reg_wrap {
+          margin: 12px 0 58px 14px; }
+          .login_all .content .wrap_center .left .reg_wrap .reg_form {
+            width: 570px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #545454; }
+            .login_all .content .wrap_center .left .reg_wrap .reg_form ul {
+              padding-bottom: 28px; }
+              .login_all .content .wrap_center .left .reg_wrap .reg_form ul li {
+                margin: 22px auto auto auto; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li .lab_head {
+                  display: inline-block;
+                  width: 154px;
+                  height: 21px;
+                  text-align: right;
+                  padding-right: 12px; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li input {
+                  border: 0;
+                  width: 240px;
+                  height: 21px;
+                  padding: 4px 0 4px 7px;
+                  background: url(img/input-back.min.jpg) no-repeat;
+                  background-size: 247px 29px;
+                  vertical-align: middle; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li .random_1 {
+                  display: inline-block;
+                  width: 82px;
+                  height: 27px;
+                  background: #666;
+                  border: 1px solid #e0dfdd;
+                  vertical-align: middle;
+                  background: url(img/1.min.png) no-repeat;
+                  color: #000;
+                  font-size: 16px;
+                  text-align: center;
+                  line-height: 27px; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li u {
+                  padding-left: 162px;
+                  font-size: 12px;
+                  color: #d7003b; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li .login {
+                  width: 124px;
+                  height: 30px;
+                  text-align: center;
+                  line-height: 30px;
+                  background: #9e002b;
+                  display: inline-block;
+                  margin-bottom: 14px; }
+                  .login_all .content .wrap_center .left .reg_wrap .reg_form ul li .login a {
+                    color: #fff; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li .fg_pw {
+                  text-decoration: underline;
+                  color: #000; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li p {
+                  padding-left: 162px; }
+                  .login_all .content .wrap_center .left .reg_wrap .reg_form ul li p a {
+                    color: #9e002b; }
+      .login_all .content .wrap_center .right {
+        width: 314px;
+        float: left;
+        border: 1px solid #ccc; }
+        .login_all .content .wrap_center .right .right_center {
+          margin: 12px 0 35px 30px; }
+          .login_all .content .wrap_center .right .right_center h2 {
+            font-size: 16px;
+            color: #8c5b29;
+            padding: 20px 0 0 0; }
+          .login_all .content .wrap_center .right .right_center .login {
+            width: 124px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #9e002b;
+            margin-top: 30px; }
+            .login_all .content .wrap_center .right .right_center .login a {
+              color: #fff; }
+          .login_all .content .wrap_center .right .right_center .coop {
+            margin: 20px auto auto auto; }
+            .login_all .content .wrap_center .right .right_center .coop p {
+              font-size: 13px;
+              line-height: 18px; }
+            .login_all .content .wrap_center .right .right_center .coop h3 {
+              color: #8c5b29;
+              font-size: 16px;
+              padding-top: 42px; }
+            .login_all .content .wrap_center .right .right_center .coop i {
+              margin-top: 6px;
+              display: inline-block;
+              font-style: normal; }
+              .login_all .content .wrap_center .right .right_center .coop i span {
+                height: 17px;
+                line-height: 17px;
+                font-size: 13px;
+                padding-left: 2px;
+                color: #000; }
+            .login_all .content .wrap_center .right .right_center .coop .icon_zfb {
+              color: #ccc;
+              text-align: center; }
+            .login_all .content .wrap_center .right .right_center .coop .icon_xinlang {
+              color: darkorange;
+              text-align: center; }
+            .login_all .content .wrap_center .right .right_center .coop .icon_QQ {
+              font-size: 13px;
+              text-align: center; }
+            .login_all .content .wrap_center .right .right_center .coop h4 {
+              color: #8c5b29;
+              font-size: 16px;
+              padding-top: 12px; }
+            .login_all .content .wrap_center .right .right_center .coop i {
+              margin-top: 6px;
+              display: inline-block;
+              font-style: normal;
+              margin-bottom: 45px; }
+              .login_all .content .wrap_center .right .right_center .coop i span {
+                height: 17px;
+                line-height: 17px;
+                font-size: 13px;
+                padding-left: 2px;
+                color: #000; }
+            .login_all .content .wrap_center .right .right_center .coop .icon_mine {
+              color: darksalmon;
+              text-align: center; }

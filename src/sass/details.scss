@@ -1,4 +1,33 @@
 @import 'public';
+/* 详情信息 */
+.details_all{
+	overflow: hidden;
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	min-width: 1000px;
+	.content_wap{
+		overflow: hidden;
+		position: relative;
+		z-index: 9;
+		padding: 20px 0;
+		.content_center{
+			width: 980px;
+			margin: 0 auto;
+			position: relative;
+			.details_nav{
+				padding: 15px 0;
+				font-size: 12px;
+				color: #b49759;
+				border-bottom: 1px solid #b49759;
+				a{
+					color: #b49759;
+					margin-right: 7px;
+				}
+			}
+		}
+	}
+}
 /* 返回顶部 */
 .top_scroll{
 	left: 1216px;

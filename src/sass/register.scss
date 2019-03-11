@@ -1,1 +1,212 @@
 @import 'public';
+/* 注册 */
+.register_all{
+	width: 100%;
+	background:  url(img/background-indeximg.min.jpg) no-repeat center top;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+	.content{
+		overflow: hidden;
+		position: relative;
+		z-index: 1000;
+		width: 980px;
+		margin: 0 auto;
+		
+		padding:20px 0;
+		.wrap_center{
+			margin: 100px auto 208px auto;
+			border: 1px solid #dedede;
+			overflow: hidden;
+			background: #f9f7f1;
+			.left{
+				width: 660px;
+				border: 1px solid #ccc;
+				float: left;
+				
+				.left_center{
+					margin: 12px 0 35px 14px;
+					.left_center_top{
+					
+						.step_red{
+							font-size: 12px;
+							color: #9e002b
+						}
+						span{
+							color: #545454;
+							font-size: 13px;
+							margin-left:14px;
+							 margin-right: 18px;
+						}
+						.step_gray{
+							font-size:12px;
+							color: #a8a8a8;
+						}
+					}
+					h1{
+						font-size: 16px;
+						color: #8c5b29;
+						text-align: center;
+						margin: 5px auto 44px auto;
+					}
+					.reg_form{
+						width: 570px;
+						margin: 0 auto;
+						li{
+							margin: 22px auto auto auto;
+							position: relative;
+							font-size: 13px;
+							color: #545454;
+							.lab_head{
+								width: 154px;
+								height: 21px;
+								text-align: right;
+								padding-right: 12px;
+								display: inline-block;
+								span{
+									font-size: 12px;
+									color: #d7003b;
+								}
+							}
+							input{
+								border: 0;
+								width: 240px;
+								height: 21px;
+								padding: 4px 0 4px 7px;
+								background: url(img/input-back.min.jpg)no-repeat;
+								background-size: 247px 29px;
+								vertical-align: middle;
+							}
+							.SMSEC{
+								width: 120px;
+							}
+							.btn{
+								width: 110px;
+								background: url(img/idx-nav-cart-hover.min.gif)no-repeat;
+								color: #666;
+								font-size: 12px;
+								margin-left: 6px;
+								text-align: center;
+							}
+							.four{
+								display: inline-block;
+								width: 82px;
+								height: 27px;
+								background:url(img/1.min.png)no-repeat;
+								border: 1px solid #e0dfdd;
+								vertical-align: middle;
+								color: #000;
+								font-size: 16px;
+								text-align: center;
+								line-height: 27px;
+							}
+							.next{
+								width: 124px;
+								height: 30px;
+								text-align: center;
+								line-height: 30px;
+								background: #9e002b;
+								display: inline-block;
+								margin-bottom: 14px;
+								a{
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+			.right{
+				width: 314px;
+				float: left;
+				border: 1px solid #ccc;
+				.right_center{
+					margin: 12px 0 35px 30px;
+					h2{
+						font-size: 16px;
+						color: #8c5b29;
+						padding: 20px 0 0 0;
+					}
+					.login{
+						width: 124px;
+						height: 30px;
+						text-align: center;
+						line-height: 30px;
+						background: #9e002b;
+						margin-top: 30px;
+						a{
+							color: #fff;
+						}
+					}
+					.coop{
+						margin: 20px auto auto auto;
+						p{
+							font-size: 13px;
+							line-height: 18px;
+						}
+						h3{
+							color: #8c5b29;
+							font-size: 16px;
+							padding-top: 42px;
+						}
+						i{
+							margin-top:6px;
+							display: inline-block;
+							font-style: normal;
+							span{
+								height: 17px;
+								line-height: 17px;
+								font-size: 13px;
+								padding-left: 2px;
+								color: #000;
+							}
+						}
+						.icon_zfb{
+							
+							color: #ccc;
+							text-align: center;
+							
+						}
+						.icon_xinlang{
+						
+							color: darkorange;
+							text-align: center;
+							
+						}
+						.icon_QQ{
+							font-size: 13px;
+							text-align: center;
+							
+						}
+						h4{
+							color: #8c5b29;
+							font-size: 16px;
+							padding-top: 12px;
+						}
+						i{
+							margin-top:6px;
+							display: inline-block;
+							font-style: normal;
+							margin-bottom: 45px;
+							span{
+								height: 17px;
+								line-height: 17px;
+								font-size: 13px;
+								padding-left: 2px;
+								
+								color: #000;
+							}
+						}
+						.icon_mine{
+							
+							color: darksalmon;
+							text-align: center;
+							
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}

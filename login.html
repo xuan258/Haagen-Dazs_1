@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="dist/login.min.css"/>
+		<link rel="stylesheet" href="iconfont/font_9159fia533/iconfont.css"/>
+		
 	</head>
 	<body>
 		<!-- head -->
@@ -86,6 +88,77 @@
 				</ul>
 			</div>
 		</div>
+		<!-- login_all -->
+		<div class="login_all">
+			<div class="content">
+				<div class="wrap_center">
+					<div class="left">
+						<form id="login_form"action="" method="post">
+							<div class="login_kind">
+								<a href="#" class="active">哈根速递会员登录</a>
+								<a href="#" class="lastNoborder">哈根达斯俱乐部会员登录</a>
+							</div>
+							<div class="reg_wrap">
+								<div class="reg_form">
+									<ul>
+										<li>
+											<label class="lab_head">邮箱/手机:</label>
+											<input type="text" name="loginName" id="loginName" value="" />
+										</li>
+										<li>
+											<label class="lab_head">密码:</label>
+											<input type="password" name="password" id="password" value="" />
+										</li>
+										<li>
+											<label class="lab_head">验证码:</label>
+											<input type="text" name="securityCode" id="securityCode" value="" />
+											<span class="random_1" id="rd"></span>
+										</li>
+										<li>
+											<u>您输入的注册邮箱/手机与密码不匹配，请重新输入!</u>
+										</li>
+										<li>
+											<label class="lab_head"></label>
+											<div class="login">
+												<a href="#">登录</a>
+											</div>
+											<a href="#" class="fg_pw">忘记密码</a>
+										</li>
+										<li>
+											<p>
+												注册即同意
+												<a href="#">&lt;&lt;哈根速递购物协议&gt;&gt;</a>
+												<br>
+												哈根速递的会员同时也是哈根达斯俱乐部的会员
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="right">
+						<div class="right_center">
+							<h2>还不是注册用户</h2>
+							<div class="login">
+								<a href="register.html">新用户注册</a>
+							</div>
+							<div class="coop">
+								<p>成为哈根速递会员您将获得官方品质保证，尽享<br>
+									会员礼遇，及时获知哈根达斯最新商品信息。
+								</p>
+								<h3>合作网站登录</h3>
+								<i class="iconfont icon_zfb">&#xe717;<span>支付宝</span></i>
+								<i class="iconfont icon_xinlang">&#xe608;<span>新浪微博</span></i>
+								<i class="iconfont icon_QQ">&#xe629;<span>腾讯QQ</span></i>
+								<h4>游客登录</h4>
+								<i class="iconfont icon_mine">&#xe645;<span>游客通道</span></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- footer -->
 		<div class="footer">
 			<div class="tiles">
@@ -126,3 +199,10 @@
 		</div>
 	</body>
 </html>
+<script src="src/js/random.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$id("rd").innerHTML = yzm();
+			$id("rd").onclick = function(){
+				$id("rd").innerHTML = yzm();
+			}
+		</script>

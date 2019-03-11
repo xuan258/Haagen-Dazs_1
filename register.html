@@ -4,8 +4,9 @@
 		<meta charset="utf-8">
 		<title>注册</title>
 		<link rel="stylesheet" type="text/css" href="dist/register.min.css"/>
+		<link rel="stylesheet" href="iconfont/font_9159fia533/iconfont.css"/>
 	</head>
-	<body>
+	<body>	
 		<!-- head -->
 		<div class="head">
 			<div class="head_centre">
@@ -86,6 +87,89 @@
 				</ul>
 			</div>
 		</div>
+		<!-- register_all -->
+		<div class="register_all">
+			<div class="content">
+				<div class="wrap_center">
+					<div class="left">
+						<div class="left_center">
+							<div class="left_center_top">
+								<b class="step_red">设置账户信息</b>
+								<span>></span>
+								<b class="step_gray">完善个人信息</b>
+							</div>
+							<h1>会员注册</h1>
+							<div class="reg_form">
+								<ul>
+									<li>
+										<label class="lab_head">
+											<span>*</span>
+											手机：
+										</label>
+										<input type="text" class="phone"name="txt" id="txt" placeholder="请您确保您的个人信息真实有效" />
+									</li>
+									<li>
+										<label class="lab_head">
+											<span>*</span>
+											验证码：
+										</label>
+										<input type="text" class="EC"name="erificationcCode" id="erificationcCode" value="" />
+										<span class="four" id="rd"></span>
+									</li>
+									<li>
+										<label class="lab_head">
+											<span>*</span>
+											短信验证码：
+										</label>
+										<input type="text" class="SMSEC" name="SMSerificationcCode" id="SMSerificationcCode" value="" />
+										<input type="button" class="btn" value="点击获取验证码">
+									</li>
+									<li>
+										<label class="lab_head">
+											<span>*</span>
+											密码：
+										</label>
+										<input type="password" class="PW"name="password" id="password" placeholder="密码长度在6-12之间" />
+									</li>
+									<li>
+										<label class="lab_head">
+											<span>*</span>
+											确认密码：
+										</label>
+										<input type="text" class="CPW"name="confirmPassword" id="confirmPassword" placeholder="密码长度在6-12之间" />
+									</li>
+									<li>
+										<label class="lab_head"></label>
+										<div class="next">
+											<a href="#">下一步</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="right_center">
+							<h2>已有账号，直接登录</h2>
+							<div class="login">
+								<a href="login.html">登录</a>
+							</div>
+							<div class="coop">
+								<p>成为哈根速递会员您将获得官方品质保证，尽享<br>
+									会员礼遇，及时获知哈根达斯最新商品信息。
+								</p>
+								<h3>合作网站登录</h3>
+								<i class="iconfont icon_zfb">&#xe717;<span>支付宝</span></i>
+								<i class="iconfont icon_xinlang">&#xe608;<span>新浪微博</span></i>
+								<i class="iconfont icon_QQ">&#xe629;<span>腾讯QQ</span></i>
+								<h4>游客登录</h4>
+								<i class="iconfont icon_mine">&#xe645;<span>游客通道</span></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- footer -->
 		<div class="footer">
 			<div class="tiles">
@@ -127,3 +211,10 @@
 		
 	</body>
 </html>
+<script src="src/js/random.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$id("rd").innerHTML = yzm();
+			$id("rd").onclick = function(){
+				$id("rd").innerHTML = yzm();
+			}
+		</script>
