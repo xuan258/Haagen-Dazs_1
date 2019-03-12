@@ -252,13 +252,94 @@ a, u {
               width: 20px;
               height: 16px;
               cursor: pointer; }
-        .details_all .content_wap .content_center .jasmine_all .jasmine_r h1 {
-          font-size: 24px;
-          color: #b49759;
-          font-weight: normal; }
-        .details_all .content_wap .content_center .jasmine_all .jasmine_r .FF {
-          font-size: 14px;
-          color: #b49759; }
+        .details_all .content_wap .content_center .jasmine_all .jasmine_r {
+          color: #959595;
+          padding-top: 27px;
+          width: 405px;
+          padding-left: 65px;
+          float: left; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r h1 {
+            font-size: 24px;
+            color: #b49759;
+            font-weight: normal; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .FF {
+            font-size: 14px;
+            color: #b49759; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .tips {
+            padding: 10px 0;
+            border-bottom: 1px solid #959595;
+            font-size: 12px;
+            color: #959595; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .taste {
+            font-size: 12px;
+            margin: 8px 0; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r i {
+            display: inline-block;
+            width: 40px;
+            height: 37px;
+            line-height: 37px;
+            font-size: 12px;
+            font-style: normal;
+            float: left; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r b {
+            display: inline-block;
+            height: 37px;
+            line-height: 37px;
+            font-size: 30px;
+            color: #9e002b;
+            margin-top: -3px; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_r b span {
+              font-size: 24px; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .norm {
+            clear: both;
+            margin-bottom: 25px; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_r .norm span {
+              font-size: 12px; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_r .norm p {
+              display: inline-block;
+              width: 128px;
+              height: 30px;
+              border: 1px solid #9e002b;
+              font-size: 12px;
+              background: #e8eff1 url(img/icon_check.min.png) no-repeat right bottom;
+              line-height: 30px;
+              text-align: center; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .num span {
+            font-size: 12px; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .num a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #e8eff1;
+            line-height: 20px;
+            text-align: center; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .num input {
+            width: 36px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            background: url(img/input-back.min.jpg) no-repeat;
+            border: none; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_r .shopping {
+            margin-left: 36px; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_r .shopping span {
+              margin-top: 15px;
+              display: inline-block;
+              width: 118px;
+              height: 36px;
+              line-height: 36px;
+              text-align: center; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_r .shopping .cl_red {
+              background: #9e002b;
+              font-size: 12px;
+              color: #fff; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_r .shopping .cl_yl {
+              margin-left: 5px;
+              background: #5f4b1c;
+              font-size: 12px;
+              color: #fff; }
+      .details_all .content_wap .content_center .details_Introduce {
+        clear: both; }
 
 /* 返回顶部 */
 .top_scroll {
