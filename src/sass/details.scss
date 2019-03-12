@@ -25,6 +25,43 @@
 					margin-right: 7px;
 				}
 			}
+			.jasmine_all{
+				position: relative;
+				padding-top: 15px;
+				.jasmine_l{
+					padding-left: 10px;
+					width: 500px;
+					float: left;
+					.pic{
+						position: relative;
+						display: inline-block;
+						.pic_500{
+							float: left;
+							cursor: pointer;
+						}
+						.seek{
+							position: absolute;
+							right: 4px;
+							bottom: 8px;
+							width: 20px;
+							height: 16px;
+							cursor:pointer;
+							
+						}
+					}		
+				}
+				.jasmine_r{
+					h1{
+						font-size: 24px;
+						color: rgb(180,151,89);
+						font-weight: normal;
+					}
+					.FF{
+						font-size: 14px;
+						color: #b49759;
+						}
+				}
+			}
 		}
 	}
 }

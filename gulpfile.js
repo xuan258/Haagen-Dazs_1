@@ -23,7 +23,7 @@ gulp.task('img',function(){
 	.pipe(gulp.dest('./dist/img'))
 })
 gulp.task('js',function(){
-	gulp.src('./src/js*.js')
+	gulp.src('./src/js/*.js')
 	.pipe(uglify())
 	.pipe(gulp.dest('./dist'));
 })

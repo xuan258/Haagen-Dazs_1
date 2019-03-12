@@ -232,6 +232,33 @@ a, u {
         .details_all .content_wap .content_center .details_nav a {
           color: #b49759;
           margin-right: 7px; }
+      .details_all .content_wap .content_center .jasmine_all {
+        position: relative;
+        padding-top: 15px; }
+        .details_all .content_wap .content_center .jasmine_all .jasmine_l {
+          padding-left: 10px;
+          width: 500px;
+          float: left; }
+          .details_all .content_wap .content_center .jasmine_all .jasmine_l .pic {
+            position: relative;
+            display: inline-block; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_l .pic .pic_500 {
+              float: left;
+              cursor: pointer; }
+            .details_all .content_wap .content_center .jasmine_all .jasmine_l .pic .seek {
+              position: absolute;
+              right: 4px;
+              bottom: 8px;
+              width: 20px;
+              height: 16px;
+              cursor: pointer; }
+        .details_all .content_wap .content_center .jasmine_all .jasmine_r h1 {
+          font-size: 24px;
+          color: #b49759;
+          font-weight: normal; }
+        .details_all .content_wap .content_center .jasmine_all .jasmine_r .FF {
+          font-size: 14px;
+          color: #b49759; }
 
 /* 返回顶部 */
 .top_scroll {
