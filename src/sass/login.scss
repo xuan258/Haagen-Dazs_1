@@ -9,10 +9,9 @@
 	.content{
 		overflow: hidden;
 		position: relative;
-		z-index: 9;
+		z-index: 98;
 		width: 980px;
 		margin: 0 auto;
-		background:  url(img/background-indeximg.min.jpg) no-repeat center top;
 		padding:20px 0;
 		.wrap_center{
 			margin: 100px auto 208px auto;
@@ -82,12 +81,6 @@
 									line-height: 27px;
 								}
 								
-								u{
-									padding-left: 162px;
-									font-size: 12px;
-									color: #d7003b;
-									
-								} 
 								
 								.login{
 									width: 124px;
@@ -111,6 +104,18 @@
 										color: #9e002b;
 									}
 								}
+								
+							}
+							.repeat{
+								width: 570px;
+								height: 17px;
+								u{
+									text-align: center;
+									padding-left: 162px;
+									font-size: 12px;
+									color: #d7003b;
+									display: none;
+								} 
 								
 							}
 						}

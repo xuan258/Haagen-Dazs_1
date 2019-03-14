@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>购物车</title>
 		<link rel="stylesheet" type="text/css" href="dist/cart.min.css"/>
+		
 	</head>
 	<body>
 		<!-- head -->
@@ -50,7 +51,7 @@
 					<li class="one_none">
 						<a class="nav-hover" href="index.html">首页</a>
 					</li>
-					<li>
+					<li id='shop_classify'>
 						<a class="nav-hover" href="#">商品分类</a>
 						<div class="nav-layer">
 							<ul>
@@ -75,7 +76,7 @@
 					<li>
 						<a class="nav-hover" href="#">品牌故事</a>
 					</li>
-					<li class="last_pig">
+					<li class="last_pig" id="shopping_1">
 						
 						<a class="nav-hover" href="cart.html">购物车</a>
 						<div class="shopping_trolley">
@@ -86,6 +87,138 @@
 				</ul>
 			</div>
 		</div>
+		<!-- cart_all -->
+		<div class="cart_all">
+			<div class="cart_wap">
+				<div class="content">
+					<div class="cart_pic">
+					</div>
+					<!-- cookie中不存在数据时的购物车列表 -->
+					<!-- <div class="cart_content">
+						<ul>
+							<li class="selecton">
+								<span class="sp_pic"></span>
+								外送产品
+								<span class="cum_red">0</span>
+							</li>
+							<li>
+								<span class="sp_pic"></span>
+								礼券
+								<span class="cum_red">0</span>
+							</li>
+						</ul>
+						<div class="goods">
+							<img src="dist/img/shopping-catrd-back.min.jpg" >
+							<p>购物车无商品，请先去选择商品。</p>
+						</div>
+					</div> 
+					<div class="go_back">
+						<a href="#">返回去购物</a>
+					</div> -->
+					
+					 <!--*****cookie中有数据的情况下的购物车主体部分*******-->
+					      <div class="ncc-main clearfix">
+					        	<div class="ncc-wrapper clearfix">
+					        		<h3>我的购物车</h3>
+					        		<h5>查看购物车中所添加的商品;增加减少数量、并勾选确认想要购买的商品进入下一步操作。</h5>
+					        	</div>
+					        	<div class="ncc-cart-status">
+					        		购物车状态:
+					        		<span class="bar">
+					        			<span class="sub" id="buyMaxTopPanel" data-max="50" style="width:20px"></span>
+					        		</span>
+					        		<span class="sum" id="buyTopSumPanel">10/50 ( 线上 : 10 ,门店 : 0 )</span>
+					        	</div>
+					        	
+					        	<div class="ncc-mod-thead">
+					        		<ul class="columns clearfix">
+					        			<li class="col-opt">
+					
+					        					<input type="checkbox" class="checkbox" id="checkedAllBtn" />
+					        					<label for="checkedAllBtn">全选</label>
+					
+					        			</li>
+					        			<li class="col-goods">商品</li>
+					        			<li class="col-quantity">数量</li>
+					        			<li class="col-unitprice">单价</li>
+					        			<li class="col-amount">金额</li>
+					        		</ul>
+					        	</div>
+					        	<div class="store-bar">
+					        		<input type="checkbox" class="checkbox1" />
+					                 <a href="javascript:;">官方店铺</a>
+					        	</div>
+					     
+					    <!-----******购物车部分*****----->
+					     <div class="normalGoodsList">
+								  <!-- 	<div class="goods-zone clearfix">
+					        			<div class="f1 m-r-5">
+					        				<input type="checkbox" class="J-sup-checkbox" />
+					        			</div>
+					                    <div class="goods-img">
+					                    	<a href="javascript:;">
+					                    		<img src="dist/img/CAKE093_310x310.min.jpg" alt="" style="max-width: 100%;max-height: 100%;">
+					                    	</a>
+					                    </div>
+					                    <div class="goods-main">
+					                    	<div class="spu-name">
+					                    		<a href="javascript:;">倾心茉莉</a>
+					                    	</div>
+					                    	<div class="panel-remove">
+					                    		<i class="icon-collect iconfont" title="收藏">&#xe60f;</i>
+					                    		<i class="icon-delete iconfont" title="删除">&#xe630;</i>
+					                    	</div>
+					                    	<div class="spu-singles">
+					                    		<div class="sku-quantity">
+					                    			<i class="jian">-</i>
+					                    			<i class="buyNum">1</i>
+					                    			<i class="jia">+</i>
+					                    		</div>
+					                    		<div class="price-thin clearfix">
+					                    			<span class="yuan">￥</span>
+					                    			<span class="integer">428.00</span>
+					                    		</div>
+					                    		<div class="price-true">
+					                    			<span class="yuan">￥</span>
+					                    			<span class="integer">
+					                    				428.00
+					                    			</span>
+					                    		</div>
+					                    	</div>
+					                    </div>
+					        		-->
+									</div>
+								<div class="ncc-mod-tfoot">
+								        		<div class="actions">
+								        			<input type="checkbox" id="checkedAllBottomBtn" class="checkbox"/><label for="checkedAllBottomBtn">全选</label>
+								        			<a href="javascript:;" class="delete">删除</a>
+								        		</div>
+								        		<div class="summary">
+								        			<p>
+								        				<span>选购商品品种: </span>
+								        				<span class="kinds-total"></span>
+								        				<span>种</span>&emsp;&emsp;&emsp;
+								        				<span>选购数量总计 : </span>
+								        				<span class="quantity-total"></span>
+								        				<span>件</span>&emsp;&emsp;&emsp;
+								        				<span>商品金额总计 : </span>
+								        				<span class="amount-total"></span>
+								        			</p>
+								        		</div>
+								        		<div class="form clearfix">
+								        			<button id="cartSubmit" class="checkout">结算</button>
+								        		</div>
+								        	</div>
+											<div class="go_back">
+												<a href="#">返回去购物</a>
+											</div>
+										
+									
+									</div>
+					        </div> 
+						</div>
+					</div>       
+				</div>	  
 		<!-- footer -->
 		<div class="footer">
 			<div class="tiles">
@@ -125,4 +258,12 @@
 			</div>
 		</div>
 	</body>
+	
 </html>
+<script src="src/js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/cart.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/cookie.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	

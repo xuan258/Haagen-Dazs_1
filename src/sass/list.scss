@@ -85,6 +85,14 @@
 					height: 452px;
 					position: relative;
 					margin-right: 14px;
+					.mark{
+						width: 82px;
+						height: 19px;
+						position: absolute;
+						background:url(img/click-collection-img.min.jpg) no-repeat;
+						z-index: 99;
+						display: none;
+					}
 					.start_collction{
 						border: 1px solid #eceaeb;
 						img{
@@ -106,6 +114,10 @@
 							white-space: nowrap;
 							text-overflow: ellipsis;
 							display: block;
+						}
+						a:hover{
+							color: #f00;
+							text-decoration: underline;
 						}
 					}
 					.stat_arilt{
@@ -152,12 +164,21 @@
 						margin-top: 10px;
 						text-align: center;
 						a{
+							display: block;
+							width: 100%;
 							color: #fff;
 							font-size: 14px;
 							font-weight: bold;
 						}
 					}
+					&:hover .start_collction{
+						border: 1px solid #b49759;
+					}
+					&:hover .mark{
+						display: block;
+					}
 				}
+				
 			}
 		}
 	}

@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="dist/index.min.css"/>
-		<script src="src/js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+		<script src="dist/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+		<script src="dist/public.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!-- head -->
@@ -51,7 +54,7 @@
 					<li class="one_none">
 						<a class="nav-hover" href="index.html">首页</a>
 					</li>
-					<li>
+					<li id='shop_classify'>
 						<a class="nav-hover" href="#">商品分类</a>
 						<div class="nav-layer">
 							<ul>
@@ -76,9 +79,9 @@
 					<li>
 						<a class="nav-hover" href="#">品牌故事</a>
 					</li>
-					<li class="last_pig">
+					<li class="last_pig" id="shopping_1">
 						
-						<a class="nav-hover" href="cart.html">购物车</a>
+						<a class="nav-hover"  href="cart.html">购物车</a>
 						<div class="shopping_trolley">
 							<h2>您的购物车</h2>
 							<div class="opcity_none">您的购物车中还没有商品</div>
@@ -89,54 +92,68 @@
 		</div>
 		<!-- slider_image  -->
 		<div class="slider_L">
-			<div class="slider">
-				<ul class="slider_img">
+			<div class="slider" id="slider1">
+				<!-- <ul class="slider_img">
 					<li>
 						<a href="#"><img src="dist/img/20190303212920_19634695.min.jpg" ></a>
 					</li>
 					<li><a href="#"><img src="dist/img/20190226095938_52160220.min.jpg" ></a></li>
 					<li><a href="#"><img src="dist/img/20190111143200_60225489.min.jpg" ></a></li>
 					<li><a href="#"><img src="dist/img/20181219134852_42442587.min.jpg" ></a></li>
-				</ul>
-				<div class="slider_trigger">
-					<ul>
+				</ul> -->
+				<div class="swiper-container" style="width: 100%;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="dist/img/20190303212920_19634695.min.jpg" ></div>
+						<div class="swiper-slide"><img src="dist/img/20190226095938_52160220.min.jpg" ></div>
+						<div class="swiper-slide"><img src="dist/img/20190111143200_60225489.min.jpg" ></div>
+						<div class="swiper-slide"><img src="dist/img/20181219134852_42442587.min.jpg" ></div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>	
+				</div>
+					<!-- <ol class="slider_trigger" id="slider2">
 						<li>1</li>
 						<li>2</li>
 						<li>3</li>
 						<li>4</li>
-					</ul>
-				</div>
+					</ol> -->
+				
+				
 			</div>
 		</div>
 		<!-- body_all -->
 		<div class="body_all">
 			<div class="body_all_center">
-				<div class="star_product">
+				<div class="star_product" id="star_P">
 					<h2>明星产品<span>Hero Products</span></h2>
 					<ul>
 						<li>
-							<a href="#"><img src="dist/img/CAKE012_210x210.min.jpg" ></a>
-							<h4><a href="#">融情夏威夷</a></h4>
+							<div class="mark"></div>
+							<a href="details.html"><img src="dist/img/CAKE012_210x210.min.jpg" ></a>
+							<h4><a href="details.html" target="_blank" >融情夏威夷</a></h4>
 							<p><u>Love Hawaii</u><span><b>¥</b>268<i>/600克</i></span></p>
-							<div class='buy'><a href="#">立即购买</a></div>
+							<div class='buy'><a href="details.html">立即购买</a></div>
 						</li>
 						<li>
-							<a href="#"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
-							<h4><a href="#">玫瑰馨语</a></h4>
+							<div class="mark"></div>
+							<a href="details.html"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
+							<h4><a href="details.html"target="_blank"  >玫瑰馨语</a></h4>
 							<p><u>Rose Whisper</u><span><b>¥</b>268<i>/600克</i></span></p>
-							<div class='buy'><a href="#">立即购买</a></div>
+							<div class='buy'><a href="details.html">立即购买</a></div>
 						</li>
 						<li>
-							<a href="#"><img src="dist/img/CAKE002_210x210.min.jpg" ></a>
-							<h4><a href="#">小公主</a></h4>
+							<div class="mark"></div>
+							<a href="details.html"><img src="dist/img/CAKE002_210x210.min.jpg" ></a>
+							<h4><a href="details.html" target="_blank" >小公主</a></h4>
 							<p><u>Little Princess</u><span><b>¥</b>268<i>/600克</i></span></p>
-							<div class='buy'><a href="#">立即购买</a></div>
+							<div class='buy'><a href="details.html">立即购买</a></div>
 						</li>
 						<li>
-							<a href="#"><img src="dist/img/CAKE001_210x210.min.jpg" ></a>
-							<h4><a href="#">小王子</a></h4>
+							<div class="mark"></div>
+							<a href="details.html"><img src="dist/img/CAKE001_210x210.min.jpg" ></a>
+							<h4><a href="details.html" target="_blank" >小王子</a></h4>
 							<p><u>Little Prince</u><span><b>¥</b>268<i>/600克</i></span></p>
-							<div class='buy'><a href="#">立即购买</a></div>
+							<div class='buy'><a href="details.html">立即购买</a></div>
 						</li>
 					</ul>
 				</div>
@@ -144,31 +161,43 @@
 					<h2>甜蜜时刻<span>Sweet Moments</span></h2>
 					<div class="series_pic">
 						<ul>
-							<li class="cur">
+							<li class="cur birth">
 								<a href="#"><img src="src/img/shutter_img1.jpg" ></a>
-								<div class="bles">
+								<div class="bles" id="Bles">
 									<h4>生日庆典</h4>
+									<div class="embed">
+										
+									</div>
 								</div>
 								<div class="mark"></div>
 							</li>
-							<li>
+							<li class="favor">
 								<a href="#"><img src="src/img/shutter_img2.jpg" ></a>
 								<div class="bles">
 									<h4>宠爱一刻</h4>
+									<div class="embed">
+										
+									</div>
 								</div>
 								<div class="mark"></div>
 							</li>
-							<li>
+							<li class="sweet">
 								<a href="#"><img src="src/img/shutter_img3.jpg" ></a>
 								<div class="bles">
 									<h4>甜蜜派对</h4>
+									<div class="embed">
+										
+									</div>
 								</div>
 								<div class="mark"></div>
 							</li>
-							<li>
+							<li class="ionate">
 								<a href="#"><img src="src/img/shutter_img4.jpg" ></a>
 								<div class="bles">
 									<h4>浓情臻礼</h4>
+									<div class="embed">
+										
+									</div>
 								</div>
 								<div class="mark"></div>
 							</li>
@@ -177,115 +206,128 @@
 					<div class="content_cake">
 						<a class="cake_prev"></a>
 						<div class="cake_wrap">
-							<div class="cake_item">
+							<div class="cake_item item_1">
 								<ul>
 									<li>
-										<a href="#"><img src="dist/img/CAKE001_210x210.min.jpg" ></a>
-										<h4><a href="#">小王子</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE001_210x210.min.jpg" ></a>
+										<h4><a href="details.html">小王子</a></h4>
 										<p><u>Little Prince</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/CAKE002_210x210.min.jpg" ></a>
-										<h4><a href="#">小公主</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE002_210x210.min.jpg" ></a>
+										<h4><a href="details.html">小公主</a></h4>
 										<p><u>Little Princess</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
-										<h4><a href="#">玫瑰馨语</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
+										<h4><a href="details.html">玫瑰馨语</a></h4>
 										<p><u>Rose Whisper</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/CAKE012_210x210.min.jpg" ></a>
-										<h4><a href="#">融情夏威夷</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE012_210x210.min.jpg" ></a>
+										<h4><a href="details.html">融情夏威夷</a></h4>
 										<p><u>Love Hawaii</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
+									<li>
+										<a href="details.html"><img src="dist/img/CAKE001_210x210.min.jpg" ></a>
+										<h4><a href="details.html">小王子</a></h4>
+										<p><u>Little Prince</u><span><b>¥</b>268<i>/600克</i></span></p>
+										<div class='buy'><a href="details.html">立即购买</a></div>
+									</li>
+									
 								</ul>
 							</div>
-							<div class="cake_item">
+							<div class="cake_item item_2">
 								<ul>
 									<li>
-										<a href="#"><img src="dist/img/PACK012_210x210.min.jpg" ></a>
-										<h4><a href="#">经典套装 小纸杯套装 赠草莓小冰包</a></h4>
+										<a href="details.html"><img src="dist/img/PACK012_210x210.min.jpg" ></a>
+										<h4><a href="details.html">经典套装 小纸杯套装 赠草莓小冰包</a></h4>
 										<p><u>6 mini cups</u><span><b>¥</b>210</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/PACK013_210x210.min.jpg" ></a>
-										<h4><a href="#">经典套装 品脱套装 赠草莓小冰包</a></h4>
+										<a href="details.html#"><img src="dist/img/PACK013_210x210.min.jpg" ></a>
+										<h4><a href="details.html">经典套装 品脱套装 赠草莓小冰包</a></h4>
 										<p><u>2 Pints</u><span><b>¥</b>176</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html#">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/PACK004_210x210.min.jpg" ></a>
-										<h4><a href="#">经典套装 小纸杯(3个)+三明治套装(2个) 赠草莓小冰包</a></h4>
+										<a href="details.html"><img src="dist/img/PACK004_210x210.min.jpg" ></a>
+										<h4><a href="details.html">经典套装 小纸杯(3个)+三明治套装(2个) 赠草莓小冰包</a></h4>
 										<p><u>3Mini Cups &2 Crispy Sandwiches</u><span><b>¥</b>177</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html#">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/PACK012_210x210.min.jpg" ></a>
-										<h4><a href="#">经典套装 小纸杯套装 赠草莓小冰包</a></h4>
+										<a href="details.html"><img src="dist/img/PACK012_210x210.min.jpg" ></a>
+										<h4><a href="details.html">经典套装 小纸杯套装 赠草莓小冰包</a></h4>
 										<p><u>6 mini cups</u><span><b>¥</b>210</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 								</ul>
 							</div>
-							<div class="cake_item">
+							<div class="cake_item item_3">
 								<ul>
 									<li>
-										<a href="#"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
-										<h4><a href="#">玫瑰馨语</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
+										<h4><a href="details.html">玫瑰馨语</a></h4>
 										<p><u>Rose Whisper</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/CAKE002_210x210.min.jpg" ></a>
-										<h4><a href="#">小公主</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE002_210x210.min.jpg" ></a>
+										<h4><a href="details.html">小公主</a></h4>
 										<p><u>Little Princess</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.htmldetails.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
-										<h4><a href="#">外带冰淇淋火锅双盒球套装</a></h4>
+										<a href="details.html"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
+										<h4><a href="details.html">外带冰淇淋火锅双盒球套装</a></h4>
 										<p><u>Take-Away Fondue</u><span><b>¥</b>298</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
-										<h4><a href="#">玫瑰馨语</a></h4>
+										<a href="details.html"><img src="dist/img/CAKE004_210x210.min.jpg" ></a>
+										<h4><a href="details.html">玫瑰馨语</a></h4>
 										<p><u>Rose Whisper</u><span><b>¥</b>268<i>/600克</i></span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 								</ul>
 							</div>
-							<div class="cake_item">
+							<div class="cake_item item_4">
 								<ul>
 									<li>
-										<a href="#"><img src="dist/img/PACK013_210x210.min.jpg" ></a>
-										<h4><a href="#">经典套装 品脱套装 赠草莓小冰包</a></h4>
+										<a href="details.html"><img src="dist/img/PACK013_210x210.min.jpg" ></a>
+										<h4><a href="details.html">经典套装 品脱套装 赠草莓小冰包</a></h4>
 										<p><u>2 Pints</u><span><b>¥</b>176</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
-										<h4><a href="#">外带冰淇淋火锅双盒球套装</a></h4>
+										<a href="details.html"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
+										<h4><a href="details.html">外带冰淇淋火锅双盒球套装</a></h4>
 										<p><u>Take-Away Fondue</u><span><b>¥</b>238</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
-										<h4><a href="#">外带冰淇淋火锅双盒球套装</a></h4>
+										<a href="details.html"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
+										<h4><a href="details.html">外带冰淇淋火锅双盒球套装</a></h4>
 										<p><u>Take-Away Fondue</u><span><b>¥</b>298</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 									<li>
-										<a href="#"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
-										<h4><a href="#">外带冰淇淋火锅双盒球套装</a></h4>
+										<a href="details.html"><img src="dist/img/FONDUE003_210x210.min.jpg" ></a>
+										<h4><a href="details.html">外带冰淇淋火锅双盒球套装</a></h4>
 										<p><u>Take-Away Fondue</u><span><b>¥</b>348</span></p>
-										<div class='buy'><a href="#">立即购买</a></div>
+										<div class='buy'><a href="details.html">立即购买</a></div>
+									</li>
+									<li>
+										<a href="details.html"><img src="dist/img/PACK013_210x210.min.jpg" ></a>
+										<h4><a href="details.html">经典套装 品脱套装 赠草莓小冰包</a></h4>
+										<p><u>2 Pints</u><span><b>¥</b>176</span></p>
+										<div class='buy'><a href="details.html">立即购买</a></div>
 									</li>
 								</ul>
 							</div>
@@ -301,14 +343,50 @@
 								$('.series_pic li').stop()
 								
 							})
-							$('.series_pic li .mark').each(function(){
-								$(this).mouseenter(function(){
-									$(this).animate({opacity:'toggle'})
-								}).mouseleave(function(){
-									$(this).animate({opacity:'show'})
-								})
+							/* 实现首页手风琴透明度以及背景图片的改变 */
+							$('.birth').mouseenter(function(){
+								$(this).children('.mark').css("opacity","0");
+								$('.favor').children('.mark').css("opacity",".6");
+								$('.sweet').children('.mark').css("opacity",".6");
+								$('.ionate').children('.mark').css("opacity",".6");
+								$(this).children('.bles').children('.embed').css("display","block");
+								$('.favor').children('.bles').children('.embed').css("display","none");
+								$('.sweet').children('.bles').children('.embed').css("display","none");
+								$('.ionate').children('.bles').children('.embed').css("display","none");
+							})
+							$('.favor').mouseenter(function(){
+								$(this).children('.mark').css("opacity","0");
+								$('.birth').children('.mark').css("opacity",".6");
+								$('.sweet').children('.mark').css("opacity",".6");
+								$('.ionate').children('.mark').css("opacity",".6");
+								$(this).children('.bles').children('.embed').css("display","block");
+								$('.birth').children('.bles').children('.embed').css("display","none");
+								$('.sweet').children('.bles').children('.embed').css("display","none");
+								$('.ionate').children('.bles').children('.embed').css("display","none");
+							})
+							$('.sweet').mouseenter(function(){
+								$(this).children('.mark').css("opacity","0");
+								$('.favor').children('.mark').css("opacity",".6");
+								$('.birth').children('.mark').css("opacity",".6");
+								$('.ionate').children('.mark').css("opacity",".6");
+								$(this).children('.bles').children('.embed').css("display","block");
+								$('.favor').children('.bles').children('.embed').css("display","none");
+								$('.birth').children('.bles').children('.embed').css("display","none");
+								$('.ionate').children('.bles').children('.embed').css("display","none");
+							})
+							$('.ionate').mouseenter(function(){
+								$(this).children('.mark').css("opacity","0");
+								$('.favor').children('.mark').css("opacity",".6");
+								$('.sweet').children('.mark').css("opacity",".6");
+								$('.birth').children('.mark').css("opacity",".6");
+								$(this).children('.bles').children('.embed').css("display","block");
+								$('.favor').children('.bles').children('.embed').css("display","none");
+								$('.sweet').children('.bles').children('.embed').css("display","none");
+								$('.birth').children('.bles').children('.embed').css("display","none");
 							})
 							
+							
+								
 						
 					</script>
 				</div>
@@ -360,4 +438,86 @@
 			<div class="opration">返回顶部</div>
 		</div>
 	</body>
+	
+	<script language="javascript"> 
+		var mySwiper = new Swiper('.swiper-container',{
+	
+		//	autoplay:ture,
+			eddect:"fade",
+			pagination :{
+				el: '.swiper-pagination',
+				clickable :true,
+			},
+			autoplay: {
+				
+				disableOnInteraction: false,
+			}
+			
+		})
+	</script>
+	<script type="text/javascript">
+		/* 实现鼠标移入图片改变边框颜色以及右上角标签显示 */
+		$(document).ready(function(){
+			$('#star_P img').mouseenter(function(){
+				$(this).css('border','1px solid #b49759');
+			})
+			$('#star_P img').mouseleave(function(){
+				$(this).css('border','1px solid #eceaed');
+			})
+ 			$('#star_P img').mouseenter(function(){
+				$(this).parent().prev().css('display','block');
+ 			})
+			$('#star_P img').mouseleave(function(){
+				$(this).parent().prev().css('display','none');
+			})
+			//鼠标移入导航栏商品分类时二级菜单显示
+			/* $('#shop_classify').mouseenter(function(){
+				$(this).children('.nav-layer').css('display','block');
+			})
+			$('.nav-layer').mouseleave(function(){
+				$(this).css('display','none');
+			}) */
+			$(window).scroll(function(){
+				var scroll_top =$(window).scrollTop();
+				if(scroll_top >=50){
+					$('.top_scroll').css('display','block');
+				}else{
+					$('.top_scroll').css('display','none');
+				}
+			})
+			
+		})
+		/* 实现鼠标移入手风琴图片系列改变下面相对应的图片 */
+		$('.birth').mouseenter(function(){
+			$('.item_1').css("display","block");
+			$('.item_2').css("display","none");
+			$('.item_3').css("display","none");
+			$('.item_4').css("display","none");
+		})
+		$('.favor').mouseenter(function(){
+			$('.item_2').css("display","block");
+			$('.item_1').css("display","none");
+			$('.item_3').css("display","none");
+			$('.item_4').css("display","none");
+		})
+		$('.sweet').mouseenter(function(){
+			$('.item_3').css("display","block");
+			$('.item_1').css("display","none");
+			$('.item_2').css("display","none");
+			$('.item_4').css("display","none");
+		})
+		$('.ionate').mouseenter(function(){
+			$('.item_4').css("display","block");
+			$('.item_1').css("display","none");
+			$('.item_2').css("display","none");
+			$('.item_3').css("display","none");
+		})
+		$('.ionate').mouseenter(function(){
+			$('.cake_prev').click(function(){
+				$('.item_4').children().children().animate({left:'0'},100);
+			})
+		})
+	</script>
 </html>
+
+

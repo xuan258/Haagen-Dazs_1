@@ -100,7 +100,8 @@ a, u {
         position: absolute;
         background: #fff;
         width: 140px;
-        display: none; }
+        display: none;
+        z-index: 999; }
         .nav .center li .nav-layer li {
           background: none;
           padding: 12px 0; }
@@ -122,7 +123,8 @@ a, u {
         padding-top: 1px;
         border: 1px solid #adadad;
         font-size: 12px;
-        display: none; }
+        display: none;
+        z-index: 999; }
         .nav .center .last_pig .shopping_trolley h2 {
           width: 100%;
           height: 24px;
@@ -132,7 +134,8 @@ a, u {
           line-height: 24px; }
         .nav .center .last_pig .shopping_trolley .opcity_none {
           padding: 12px 20px;
-          line-height: 28px; }
+          line-height: 28px;
+          background: #fff; }
 
 /* 尾部 */
 .footer {
@@ -280,6 +283,13 @@ a, u {
           height: 452px;
           position: relative;
           margin-right: 14px; }
+          .list_all .content_wap .content_center .fall li .mark {
+            width: 82px;
+            height: 19px;
+            position: absolute;
+            background: url(img/click-collection-img.min.jpg) no-repeat;
+            z-index: 99;
+            display: none; }
           .list_all .content_wap .content_center .fall li .start_collction {
             border: 1px solid #eceaeb; }
             .list_all .content_wap .content_center .fall li .start_collction img {
@@ -298,6 +308,9 @@ a, u {
             white-space: nowrap;
             text-overflow: ellipsis;
             display: block; }
+          .list_all .content_wap .content_center .fall li h4 a:hover {
+            color: #f00;
+            text-decoration: underline; }
           .list_all .content_wap .content_center .fall li .stat_arilt {
             width: 225px;
             overflow: hidden;
@@ -336,9 +349,15 @@ a, u {
             margin-top: 10px;
             text-align: center; }
             .list_all .content_wap .content_center .fall li .start_cart a {
+              display: block;
+              width: 100%;
               color: #fff;
               font-size: 14px;
               font-weight: bold; }
+          .list_all .content_wap .content_center .fall li:hover .start_collction {
+            border: 1px solid #b49759; }
+          .list_all .content_wap .content_center .fall li:hover .mark {
+            display: block; }
 
 /* 返回顶部 */
 .top_scroll {

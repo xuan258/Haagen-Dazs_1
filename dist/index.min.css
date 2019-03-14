@@ -100,7 +100,8 @@ a, u {
         position: absolute;
         background: #fff;
         width: 140px;
-        display: none; }
+        display: none;
+        z-index: 999; }
         .nav .center li .nav-layer li {
           background: none;
           padding: 12px 0; }
@@ -122,7 +123,8 @@ a, u {
         padding-top: 1px;
         border: 1px solid #adadad;
         font-size: 12px;
-        display: none; }
+        display: none;
+        z-index: 999; }
         .nav .center .last_pig .shopping_trolley h2 {
           width: 100%;
           height: 24px;
@@ -132,7 +134,8 @@ a, u {
           line-height: 24px; }
         .nav .center .last_pig .shopping_trolley .opcity_none {
           padding: 12px 20px;
-          line-height: 28px; }
+          line-height: 28px;
+          background: #fff; }
 
 /* 尾部 */
 .footer {
@@ -217,12 +220,10 @@ a, u {
   min-width: 1000px; }
   .slider_L .slider {
     position: relative;
-    width: 980px;
     height: 330px;
     z-index: 1;
     margin: auto; }
     .slider_L .slider .slider_img {
-      margin-left: -460px;
       position: absolute;
       z-index: 1; }
       .slider_L .slider .slider_img li {
@@ -235,21 +236,18 @@ a, u {
       height: 20px;
       position: absolute;
       z-index: 9;
-      left: 50%;
+      left: 80%;
       bottom: 15px;
-      overflow: hidden;
-      margin-left: -490px; }
-      .slider_L .slider .slider_trigger ul {
-        float: right; }
-        .slider_L .slider .slider_trigger ul li {
-          float: left;
-          width: 20px;
-          height: 20px;
-          text-align: center;
-          background: #eecd9c;
-          color: #955b24;
-          margin-left: 20px;
-          line-height: 20px; }
+      overflow: hidden; }
+      .slider_L .slider .slider_trigger li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        background: #eecd9c;
+        color: #955b24;
+        margin-left: 20px;
+        line-height: 20px; }
 
 /* 内容 */
 .body_all {
@@ -271,7 +269,15 @@ a, u {
         height: 339px; }
         .body_all .body_all_center .star_product ul li {
           float: left;
-          margin: 20px 15px; }
+          margin: 20px 15px;
+          position: relative; }
+          .body_all .body_all_center .star_product ul li .mark {
+            width: 82px;
+            height: 19px;
+            position: absolute;
+            background: url(img/click-collection-img.min.jpg) no-repeat;
+            z-index: 99;
+            display: none; }
           .body_all .body_all_center .star_product ul li img {
             border: 1px solid #eceaed;
             display: block; }
@@ -285,6 +291,9 @@ a, u {
               font-weight: normal;
               padding-top: 10px;
               line-height: 24px; }
+            .body_all .body_all_center .star_product ul li h4 a:hover {
+              color: #f00;
+              text-decoration: underline; }
           .body_all .body_all_center .star_product ul li p {
             width: 215px;
             height: 20px;
@@ -342,7 +351,7 @@ a, u {
             left: 0;
             top: 0;
             width: 100%;
-            height: 350px;
+            height: 410px;
             background: #000;
             opacity: .6; }
           .body_all .body_all_center .sweet_moment .series_pic li .bles {
@@ -351,7 +360,16 @@ a, u {
             color: #fff;
             text-align: right;
             padding-right: 15px;
-            overflow: hidden; }
+            overflow: hidden;
+            position: relative; }
+            .body_all .body_all_center .sweet_moment .series_pic li .bles .embed {
+              position: absolute;
+              width: 100%;
+              height: 73px;
+              right: 0;
+              top: 0;
+              background: url(img/shutter_bg.min.gif) no-repeat 0 -77px;
+              display: none; }
             .body_all .body_all_center .sweet_moment .series_pic li .bles h4 {
               margin-top: 15px;
               font-size: 16px;
@@ -380,74 +398,86 @@ a, u {
           width: 16px;
           height: 27px;
           right: 0; }
-        .body_all .body_all_center .sweet_moment .content_cake .cake_item {
-          position: absolute;
-          width: 980px;
-          height: 306px;
-          float: left;
-          position: relative;
-          overflow: hidden; }
-          .body_all .body_all_center .sweet_moment .content_cake .cake_item ul {
+        .body_all .body_all_center .sweet_moment .content_cake .cake_wrap {
+          position: relative; }
+          .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .item_1 {
+            display: block; }
+          .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .item_2 {
+            display: none; }
+          .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .item_3 {
+            display: none; }
+          .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .item_4 {
+            display: none; }
+          .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item {
+            width: 980px;
+            height: 306px;
+            float: left;
             position: absolute;
-            z-index: 1;
-            width: 1200px; }
-            .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li {
-              float: left;
-              margin-left: 20px;
-              width: 224px;
-              color: #545454;
-              position: relative; }
-              .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li img {
-                width: 210px;
-                height: 210px;
-                display: block; }
-              .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li h4 {
-                margin-top: 10px;
-                width: 215px;
-                overflow: hidden;
-                height: 24px;
-                white-space: nowrap;
-                text-overflow: ellipsis; }
-                .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li h4 a {
-                  color: #333;
-                  font-size: 14px;
-                  font-weight: normal;
-                  line-height: 24px; }
-              .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li p {
-                width: 215px;
-                height: 20px;
-                line-height: 20px;
+            overflow: hidden; }
+            .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul {
+              z-index: 1;
+              width: 1200px;
+              overflow: hidden; }
+              .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li {
+                float: left;
+                margin-left: 20px;
+                width: 224px;
                 color: #545454;
-                font-size: 14px;
-                position: relative;
-                overflow: hidden;
-                padding-bottom: 10px; }
-                .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li p u {
-                  display: inline-block;
-                  width: 148px;
+                position: relative; }
+                .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li img {
+                  width: 210px;
+                  height: 210px;
+                  display: block; }
+                .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li h4 {
+                  margin-top: 10px;
+                  width: 215px;
                   overflow: hidden;
-                  height: 20px;
+                  height: 24px;
                   white-space: nowrap;
                   text-overflow: ellipsis; }
-                .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li p span {
-                  position: absolute;
-                  right: 0;
-                  color: #9e002b;
-                  font-size: 20px; }
-                  .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li p span b {
-                    font-size: 18px; }
-                  .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li p span i {
-                    font-style: normal;
-                    font-size: 12px; }
-              .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li .buy {
-                height: 30px;
-                line-height: 30px;
-                text-align: center;
-                background: url(img/pro-list-add-buy.min.gif) no-repeat; }
-                .body_all .body_all_center .sweet_moment .content_cake .cake_item ul li .buy a {
-                  color: #fff;
+                  .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li h4 a {
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 24px; }
+                  .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li h4 a:hover {
+                    color: #f00;
+                    text-decoration: underline; }
+                .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li p {
+                  width: 215px;
+                  height: 20px;
+                  line-height: 20px;
+                  color: #545454;
                   font-size: 14px;
-                  font-weight: bold; }
+                  position: relative;
+                  overflow: hidden;
+                  padding-bottom: 10px; }
+                  .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li p u {
+                    display: inline-block;
+                    width: 148px;
+                    overflow: hidden;
+                    height: 20px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis; }
+                  .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li p span {
+                    position: absolute;
+                    right: 0;
+                    color: #9e002b;
+                    font-size: 20px; }
+                    .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li p span b {
+                      font-size: 18px; }
+                    .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li p span i {
+                      font-style: normal;
+                      font-size: 12px; }
+                .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li .buy {
+                  height: 30px;
+                  line-height: 30px;
+                  text-align: center;
+                  background: url(img/pro-list-add-buy.min.gif) no-repeat; }
+                  .body_all .body_all_center .sweet_moment .content_cake .cake_wrap .cake_item ul li .buy a {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: bold; }
 
 /* 尾部 */
 .footer {

@@ -5,7 +5,10 @@
 		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="dist/login.min.css"/>
 		<link rel="stylesheet" href="iconfont/font_9159fia533/iconfont.css"/>
-		
+		<script src="dist/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/login.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!-- head -->
@@ -52,7 +55,7 @@
 					<li class="one_none">
 						<a class="nav-hover" href="index.html">首页</a>
 					</li>
-					<li>
+					<li id='shop_classify'>
 						<a class="nav-hover" href="#">商品分类</a>
 						<div class="nav-layer">
 							<ul>
@@ -77,7 +80,7 @@
 					<li>
 						<a class="nav-hover" href="#">品牌故事</a>
 					</li>
-					<li class="last_pig">
+					<li class="last_pig" id="shopping_1">
 						
 						<a class="nav-hover" href="cart.html">购物车</a>
 						<div class="shopping_trolley">
@@ -95,31 +98,33 @@
 					<div class="left">
 						<form id="login_form"action="" method="post">
 							<div class="login_kind">
-								<a href="#" class="active">哈根速递会员登录</a>
-								<a href="#" class="lastNoborder">哈根达斯俱乐部会员登录</a>
+								<a href="#" class="active" id="member">哈根速递会员登录</a>
+								<a href="#" class="lastNoborder" id="member">哈根达斯俱乐部会员登录</a>
 							</div>
 							<div class="reg_wrap">
 								<div class="reg_form">
 									<ul>
 										<li>
 											<label class="lab_head">邮箱/手机:</label>
-											<input type="text" name="loginName" id="loginName" value="" />
+											<input type="text" name="loginName" id="loginName" onBlur="checkPhone()" oninput="checkPhone()" value="" />
+											<span class="default" id="phoneErr">*</span>
 										</li>
 										<li>
 											<label class="lab_head">密码:</label>
-											<input type="password" name="password" id="password" value="" />
+											<input type="password" name="password" id="password"onBlur="checkPassword()" oninput="checkPassword()" value="" />
+											<span class="default" id="phoneErr">*</span>
 										</li>
 										<li>
 											<label class="lab_head">验证码:</label>
-											<input type="text" name="securityCode" id="securityCode" value="" />
+											<input type="text" name="securityCode" id="securityCode"onBlur="ConfirmPassword()" oninput="ConfirmPassword()"  value="" />
 											<span class="random_1" id="rd"></span>
 										</li>
-										<li>
-											<u>您输入的注册邮箱/手机与密码不匹配，请重新输入!</u>
+										<li class='repeat'>
+											<u id="error">您输入的注册邮箱/手机与密码不匹配，请重新输入!</u>
 										</li>
 										<li>
 											<label class="lab_head"></label>
-											<div class="login">
+											<div class="login" id="login_1">
 												<a href="#">登录</a>
 											</div>
 											<a href="#" class="fg_pw">忘记密码</a>
@@ -205,4 +210,7 @@
 			$id("rd").onclick = function(){
 				$id("rd").innerHTML = yzm();
 			}
+			$('#member').click(function(){
+				$(this).css({'background':'#f9f7f1','border-top':'3px solid #9e002b'});
+			})
 		</script>

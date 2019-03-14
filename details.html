@@ -3,13 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>详情</title>
-		<link rel="stylesheet" type="text/css" href="dist/details.min.css"/>
+		<link rel="stylesheet" type="text/css" href="dist/details.min.css" />
+		<script src="dist/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/public.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		
+
 	</head>
 	<body>
 		<!-- head -->
 		<div class="head">
 			<div class="head_centre">
-				<img src="dist/img/20140905144420_71563082.min.jpg" >
+				<img src="dist/img/20140905144420_71563082.min.jpg">
 				<div class="head_r">
 					<div class="head_rLi">
 						<ul>
@@ -30,7 +36,7 @@
 					</div>
 					<div class="head_rTxt">
 						<form action="" method="post">
-							<input type="text" name="seek" class="txt" value="蛋糕"/>
+							<input type="text" name="seek" class="txt" value="蛋糕" />
 						</form>
 					</div>
 					<span class="city">
@@ -38,12 +44,12 @@
 						<a href="#">[切换城市]</a>
 					</span>
 					<span class="phone">
-						<img src="dist/img/header-tel.min.gif" >订购电话 4009 870 870
+						<img src="dist/img/header-tel.min.gif">订购电话 4009 870 870
 					</span>
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- nav -->
 		<div class="nav">
 			<div class="center">
@@ -51,7 +57,7 @@
 					<li class="one_none">
 						<a class="nav-hover" href="index.html">首页</a>
 					</li>
-					<li>
+					<li id='shop_classify'>
 						<a class="nav-hover" href="#">商品分类</a>
 						<div class="nav-layer">
 							<ul>
@@ -76,8 +82,8 @@
 					<li>
 						<a class="nav-hover" href="#">品牌故事</a>
 					</li>
-					<li class="last_pig">
-						
+					<li class="last_pig" id="shopping_1">
+
 						<a class="nav-hover" href="cart.html">购物车</a>
 						<div class="shopping_trolley">
 							<h2>您的购物车</h2>
@@ -100,53 +106,77 @@
 					</div>
 					<div class="jasmine_all">
 						<div class="jasmine_l">
-							<div class="pic">
-								<img class="pic_500" src="dist/img/CAKE093_500x500.min.jpg" >
-								<img class="seek"src="dist/img/ico-magnifying.min.gif" >
-							</div>
-							<!-- <div class="pic_scroll">
-								<img src="dist/img/CAKE093_800x800.min.jpg" >
-							</div> -->
-						</div>
-						<div class="jasmine_r">
-							<h1>倾心茉莉</h1>
-							<p class="FF">Floral Fantasy</p>
-							<p class="tips">覆盆子石榴的酸甜外衣包裹着清新的茉莉风味冰淇淋，芬芳优雅的外表，入口花香浓郁，香草味加上果香花香让唇齿如沐清风，怡然自得。</p>
-							<p class="taste">口味： 茉莉花覆盆子石榴、香草</p>
-							<i>价格：</i><b><span>¥ </span>428</b></p>
-							<div class="norm">
-								<span>规格：</span>
-								<p>1.2千克 5-8人左右</p>
-							</div>
-							<div class="num">
-								<span>数量：</span>
-								<a href="javascript:;" class="minus">-</a>
-								<input type="text" name="" id="" value="2" />
-								<a href="javascript:;" class="plus">+</a>
-							</div>
-							<div class="shopping">
-								<span class="cl_red">立即订购</span>
-								<span class="cl_yl">加入购物车</span>
+                       <!--box-->
+							<div id="box" class="magnify" data-center="true" data-scale="2" data-containment=".magnify"
+							 data-magnify-glass=".magnify_glass" data-magnified-element=".magnified_element" data-magnified-zone=".magnify_glass"
+							 data-element-to-magnify=".element_to_magnify">
+							
+							<div class="element_to_magnify" id="small">
+								<div class=" magnify_glass" id="mask">
+								   <img class="pic_800" src="dist/img/CAKE093_800x800.min.jpg" draggable="false" id="bigImg"/>
+							    </div>
+								<img class="pic_500" src="dist/img/CAKE093_500x500.min.jpg" draggable="false" />
+								<img class="seek" src="dist/img/ico-magnifying.min.gif">
 							</div>
 						</div>
+
+
 					</div>
-					<div class="details_Introduce">
-						<h3>商品描述 Goods Description</h3>
-						<img src="dist/img/_1-1.min.jpg" >
+					<div class="jasmine_r">
+						<h1>倾心茉莉</h1>
+						<p class="FF">Floral Fantasy</p>
+						<p class="tips">覆盆子石榴的酸甜外衣包裹着清新的茉莉风味冰淇淋，芬芳优雅的外表，入口花香浓郁，香草味加上果香花香让唇齿如沐清风，怡然自得。</p>
+						<p class="taste">口味： 茉莉花覆盆子石榴、香草</p>
+						<i>价格：</i><b><span>¥ </span>428</b></p>
+						<div class="norm">
+							<span>规格：</span>
+							<p>1.2千克 5-8人左右</p>
+						</div>
+						<div class="num">
+							<span>数量：</span>
+							<a href="javascript:;" class="minus">-</a>
+							<input type="text" name="" id="" value="1" />
+							<a href="javascript:;" class="plus">+</a>
+						</div>
+						<div class="shopping">
+							<span class="cl_red">立即订购</span>
+							<span class="cl_yl">加入购物车</span>
+						</div>
+						<div class="share">
+							<a href="#" class="sh_mshare" title="分享到一键分享"></a>
+							<a href="#" class="sh_qzone" title="分享到QQ空间"></a>
+							<a href="#" class="sh_tsina" title="分享到新浪微博"></a>
+							<a href="#" class="sh_baidu"></a>
+							<a href="#" class="sh_renren" title="分享到人人网"></a>
+							<a href="#" class="sh_tqq" title="分享到腾讯微博"></a>
+							<a href="#" class="sh_more">更多</a>
+							<a href="#" class="sh_count" title="累计分享0次">0</a>
+						</div>
+						<div class="collect">
+							<a href="#">收藏商品</a>
+						</div>
 					</div>
 				</div>
+				<div class="details_Introduce">
+					<h3>商品描述<span>Goods Description</span></h3>
+					<img src="dist/img/_1-1.min.jpg">
+				</div>
+				<div class="love">
+					<p>你可能喜欢</p>
+				</div>
 			</div>
+		</div>
 		</div>
 		<!-- footer -->
 		<div class="footer">
 			<div class="tiles">
 				<div class="tiles_center">
 					<div class="wrap">
-						<img src="dist/img/footer-logins.min.jpg" >
+						<img src="dist/img/footer-logins.min.jpg">
 						<div class="about">
 							<p><span>关注我们</span>第一时间获得哈根速递最新商品及活动信息</p>
 							<div class="blog">
-								<a href="#"><img src="dist/img/xle.min.gif" ></a>
+								<a href="#"><img src="dist/img/xle.min.gif"></a>
 								<input type="text" name="email" class="email" placeholder="请输入邮箱地址" />
 								<span></span>
 							</div>
@@ -166,9 +196,9 @@
 						<a href="#">公司证件</a>
 					</div>
 					<p>
-						<a href="#"><img src="dist/img/industryremark_l.min.png" ></a>
+						<a href="#"><img src="dist/img/industryremark_l.min.png"></a>
 						<span class="interval">版权归通用磨坊贸易(上海)有限公司所有&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备11032068号-4</span>
-						<img src="dist/img/wangan.min.png" >
+						<img src="dist/img/wangan.min.png">
 						<a href="#">沪公网安备 31010502000187号</a>
 						<span>自建食品交易网站备案号：沪网食备B0014号</span>
 					</p>
@@ -182,5 +212,81 @@
 			</div>
 			<div class="opration">返回顶部</div>
 		</div>
+		<!-- share_to -->
+		<div class="share_to" id="share_tt">
+			<a class="share_to1" href="#"></a>
+			<div class="list_box">
+				<div class="box_top">
+					分享到
+				</div>
+				<div class="box_center">
+					<ul>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+						<li>百度云收藏</li>
+					</ul>
+				</div>
+				<div class="box_bottom">
+					<a href="#">更多...</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
+<script type="text/javascript">
+	$(window).scroll(function() {
+		var scroll_top = $(window).scrollTop();
+		if (scroll_top >= 50) {
+			$('.top_scroll').css('display', 'block');
+		} else {
+			$('.top_scroll').css('display', 'none');
+		}
+	})
+	$('#share_tt').mouseenter(function() {
+		$(this).animate({
+			right: 0
+		});
+	})
+	$('#share_tt').mouseleave(function() {
+		$(this).animate({
+			right: -226
+		});
+	})
+	
+	small.onmouseover=function(){
+		mask.style.display="block"
+	}
+	small.onmouseout=function(){
+		mask.style.display="none"
+		
+	}
+	small.onmousemove=function(e){
+		var e=e||event;
+		var x=e.pageX-box.offsetLeft-mask.offsetWidth/2;
+		var y=e.pageY-box.offsetTop-mask.offsetHeight/2;
+	    var maxL=box.clientWidth-mask.offsetWidth;
+		var maxT=box.clientHeight-mask.offsetHeight;
+		x=x<0?0:(x>maxL?x=maxL:x);
+		y=y<0?0:(y>maxT?y=maxT:y);
+		mask.style.left=x+"px";
+		mask.style.top=y+"px";
+		var bigImgleft=x*(bigImg.offsetWidth-mask.offsetWidth)/(small.offsetWidth-mask.offsetWidth);
+		var bigImgtop=y*(bigImg.offsetHeight-mask.offsetHeight)/(small.offsetHeight-mask.offsetHeight);
+		bigImg.style.left=-bigImgleft+"px";
+		bigImg.style.top=-bigImgtop+"px";
+	}
+	
+</script>

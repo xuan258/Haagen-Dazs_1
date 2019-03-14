@@ -4,6 +4,7 @@ const gulp = require('gulp'),
 	cssnano = require('gulp-cssnano'),
 	imageMin = require('gulp-imagemin');
 	uglify = require('gulp-uglify');
+	babel = require('gulp-babel');
 gulp.task('sass',function(){
 	gulp.src('./src/sass/*.scss')
 	.pipe(sass())
@@ -25,6 +26,9 @@ gulp.task('img',function(){
 gulp.task('js',function(){
 	gulp.src('./src/js/*.js')
 	.pipe(uglify())
+	.pipe(babel({
+		presets : ['@babel/env']
+	}))
 	.pipe(gulp.dest('./dist'));
 })
 

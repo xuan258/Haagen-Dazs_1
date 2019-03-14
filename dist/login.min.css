@@ -100,7 +100,8 @@ a, u {
         position: absolute;
         background: #fff;
         width: 140px;
-        display: none; }
+        display: none;
+        z-index: 999; }
         .nav .center li .nav-layer li {
           background: none;
           padding: 12px 0; }
@@ -122,7 +123,8 @@ a, u {
         padding-top: 1px;
         border: 1px solid #adadad;
         font-size: 12px;
-        display: none; }
+        display: none;
+        z-index: 999; }
         .nav .center .last_pig .shopping_trolley h2 {
           width: 100%;
           height: 24px;
@@ -132,7 +134,8 @@ a, u {
           line-height: 24px; }
         .nav .center .last_pig .shopping_trolley .opcity_none {
           padding: 12px 20px;
-          line-height: 28px; }
+          line-height: 28px;
+          background: #fff; }
 
 /* 尾部 */
 .footer {
@@ -217,10 +220,9 @@ a, u {
   .login_all .content {
     overflow: hidden;
     position: relative;
-    z-index: 9;
+    z-index: 98;
     width: 980px;
     margin: 0 auto;
-    background: url(img/background-indeximg.min.jpg) no-repeat center top;
     padding: 20px 0; }
     .login_all .content .wrap_center {
       margin: 100px auto 208px auto;
@@ -284,10 +286,6 @@ a, u {
                   font-size: 16px;
                   text-align: center;
                   line-height: 27px; }
-                .login_all .content .wrap_center .left .reg_wrap .reg_form ul li u {
-                  padding-left: 162px;
-                  font-size: 12px;
-                  color: #d7003b; }
                 .login_all .content .wrap_center .left .reg_wrap .reg_form ul li .login {
                   width: 124px;
                   height: 30px;
@@ -305,6 +303,15 @@ a, u {
                   padding-left: 162px; }
                   .login_all .content .wrap_center .left .reg_wrap .reg_form ul li p a {
                     color: #9e002b; }
+              .login_all .content .wrap_center .left .reg_wrap .reg_form ul .repeat {
+                width: 570px;
+                height: 17px; }
+                .login_all .content .wrap_center .left .reg_wrap .reg_form ul .repeat u {
+                  text-align: center;
+                  padding-left: 162px;
+                  font-size: 12px;
+                  color: #d7003b;
+                  display: none; }
       .login_all .content .wrap_center .right {
         width: 314px;
         float: left;

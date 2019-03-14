@@ -1,0 +1,190 @@
+{
+	"list":[
+		{
+			"id" : "dazs01",
+			"src" :"dist/img/CAKE093_310x310.min.jpg",
+			"price" : "428.00",
+			"name" : "倾心茉莉"
+		},
+		{
+			"id" : "dazs02",
+			"src" :"dist/img/CAKE088_310x310.min.jpg",
+			"price" : "268.00",
+			"name" : "派对时刻"
+		},
+		{
+			"id" : "dazs03",
+			"src" :"dist/img/CAKE085_310x310.min.jpg",
+			"price" : "268.00",
+			"name" : "好事花生"
+		},
+		{
+			"id" : "dazs04",
+			"src" :"dist/img/PACK008_310x310.min.jpg",
+			"price" : "630.00",
+			"name" : "派对大师 小纸杯套装(18个装)赠送随机口味小纸杯*2"
+		},
+		{
+			"id" : "dazs05",
+			"src" :"src/img/CARD001_310x310.jpg",
+			"price" : "200.00",
+			"name" : "哈根达斯 尊礼卡200元"
+		},
+		{
+			"id" : "dazs06",
+			"src" :"dist/img/GB002_310x310.min.jpg",
+			"price" : "198.00",
+			"name" : "艺术家手包-云雾粉"
+		},
+		{
+			"id" : "dazs07",
+			"src" :"dist/img/CAKE093_310x310.min.jpg",
+			"price" : "480.00",
+			"name" : "倾心茉莉"
+		},
+		{
+			"id" : "dazs08",
+			"src" :"dist/img/CAKE088_310x310.min.jpg",
+			"price" : "238.00",
+			"name" : "派对时刻"
+		},
+		{
+			"id" : "dazs09",
+			"src" :"dist/img/CAKE085_310x310.min.jpg",
+			"price" : "368.00",
+			"name" : "好事花生"
+		},
+		{
+			"id" : "dazs10",
+			"src" :"dist/img/PACK029_310x310.min.jpg",
+			"price" : "480.00",
+			"name" : "小纸杯单个装"
+		},
+		{
+			"id" : "dazs11",
+			"src" :"dist/img/CAKE088_310x310.min.jpg",
+			"price" : "238.00",
+			"name" : "派对时刻"
+		},
+		{
+			"id" : "dazs12",
+			"src" :"dist/img/PACK023_310x310.min.jpg",
+			"price" : "175.00",
+			"name" : "经典套装 小纸杯(3个)+脆皮条套装(2个)赠草莓小冰包"
+		},
+		{
+			"id" : "dazs13",
+			"src" :"dist/img/PACK004_210x210.min.jpg",
+			"price" : "177.00",
+			"name" : "经典套装 小纸杯(3个)+三明治套装(2个)赠草莓小冰包"
+		},
+		{
+			"id" : "dazs14",
+			"src" :"src/img/PACK028_310x310.jpg",
+			"price" : "36.00",
+			"name" : "三明治单个装"
+		},
+		{
+			"id" : "dazs15",
+			"src" :"dist/img/FONDUE004_210x210.min.jpg",
+			"price" : "238.00",
+			"name" : "外带冰淇淋火锅单盒球套装"
+		},
+		{
+			"id" : "dazs16",
+			"src" :"dist/img/FONDUE002_210x210.min.jpg",
+			"price" : "298.00",
+			"name" : "外带冰淇淋火锅双盒球套装"
+		},
+		{
+			"id" : "dazs11",
+			"src" :"dist/img/FONDUE003_210x210.min.jpg",
+			"price" : "348.00",
+			"name" : "外带冰淇淋火锅三盒球套装"
+		},
+		{
+			"id" : "dazs12",
+			"src" :"dist/img/PACK008_310x310.min.jpg",
+			"price" : "1120.00",
+			"name" : "派对大师 小纸杯套装(32个装)赠送随机口味小纸杯*4"
+		},
+		{
+			"id" : "dazs13",
+			"src" :"dist/img/PACK009_310x310.min.jpg",
+			"price" : "1400.00",
+			"name" : "派对大师 小纸杯套装(40个装)赠送随机口味小纸杯*6"
+		},
+		{
+			"id" : "dazs14",
+			"src" :"dist/img/CARD002_310x310.min.jpg",
+			"price" : "300.00",
+			"name" : "哈根达斯 尊礼卡300元"
+		},
+		{
+			"id" : "dazs15",
+			"src" :"src/img/ICGB003_310x310.jpg",
+			"price" : "518.00",
+			"name" : "缤纷臻意冰淇淋套装礼盒"
+		},
+		{
+			"id" : "dazs16",
+			"src" :"dist/img/PACK004_210x210.min.jpg",
+			"price" : "177.00",
+			"name" : "经典套装 小纸杯(3个)+三明治套装(2个)赠草莓小冰包"
+		},
+		{
+			"id" : "dazs17",
+			"src" :"src/img/ICGB003_310x310.jpg",
+			"price" : "198.00",
+			"name" : "艺术家手包-静谧紫"
+		},
+		{
+			"id" : "dazs18",
+			"src" :"dist/img/FONDUE004_210x210.min.jpg",
+			"price" : "238.00",
+			"name" : "外带冰淇淋火锅单盒球套装"
+		},
+		{
+			"id" : "dazs19",
+			"src" :"src/img/ICGB002_310x310.jpg",
+			"price" : "198.00",
+			"name" : "麻薯雪果子冰淇淋礼盒"
+		},
+		{
+			"id" : "dazs20",
+			"src" :"src/img/CARD001_310x310.jpg",
+			"price" : "200.00",
+			"name" : "哈根达斯 尊礼卡200元"
+		},
+		{
+			"id" : "dazs21",
+			"src" :"dist/img/GB002_310x310.min.jpg",
+			"price" : "198.00",
+			"name" : "艺术家手包-云雾粉"
+		},
+		{
+			"id" : "dazs22",
+			"src" :"dist/img/CAKE093_310x310.min.jpg",
+			"price" : "480.00",
+			"name" : "倾心茉莉"
+		},
+		{
+			"id" : "dazs23",
+			"src" :"dist/img/CAKE088_310x310.min.jpg",
+			"price" : "238.00",
+			"name" : "派对时刻"
+		},
+		{
+			"id" : "dazs24",
+			"src" :"dist/img/CAKE085_310x310.min.jpg",
+			"price" : "368.00",
+			"name" : "好事花生"
+		},
+		{
+			"id" : "dazs10",
+			"src" :"dist/img/PACK029_310x310.min.jpg",
+			"price" : "480.00",
+			"name" : "小纸杯单个装"
+		}
+	]
+}

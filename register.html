@@ -5,6 +5,10 @@
 		<title>注册</title>
 		<link rel="stylesheet" type="text/css" href="dist/register.min.css"/>
 		<link rel="stylesheet" href="iconfont/font_9159fia533/iconfont.css"/>
+		<script src="dist/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/register.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>	
 		<!-- head -->
@@ -51,7 +55,7 @@
 					<li class="one_none">
 						<a class="nav-hover" href="index.html">首页</a>
 					</li>
-					<li>
+					<li id='shop_classify'>
 						<a class="nav-hover" href="#">商品分类</a>
 						<div class="nav-layer">
 							<ul>
@@ -76,7 +80,7 @@
 					<li>
 						<a class="nav-hover" href="#">品牌故事</a>
 					</li>
-					<li class="last_pig">
+					<li class="last_pig" id="shopping_1">
 						
 						<a class="nav-hover" href="cart.html">购物车</a>
 						<div class="shopping_trolley">
@@ -106,7 +110,8 @@
 											<span>*</span>
 											手机：
 										</label>
-										<input type="text" class="phone"name="txt" id="txt" placeholder="请您确保您的个人信息真实有效" />
+										<input type="text" class="phone"name="txt" id="txt" onBlur="checkPhone()" oninput="checkPhone()" placeholder="请您确保您的个人信息真实有效" />
+										 <span class="default" id="phoneErr">*</span>
 									</li>
 									<li>
 										<label class="lab_head">
@@ -129,19 +134,21 @@
 											<span>*</span>
 											密码：
 										</label>
-										<input type="password" class="PW"name="password" id="password" placeholder="密码长度在6-12之间" />
+										<input type="password" class="PW"name="password" id="password"onBlur="checkPassword()" oninput="checkPassword()" placeholder="密码长度在6-12之间" />
+										<span class="default" id="passwordErr">*</span>
 									</li>
 									<li>
 										<label class="lab_head">
 											<span>*</span>
 											确认密码：
 										</label>
-										<input type="text" class="CPW"name="confirmPassword" id="confirmPassword" placeholder="密码长度在6-12之间" />
+										<input type="password" class="CPW"name="confirmPassword" id="confirmPassword"onBlur="ConfirmPassword()" oninput="ConfirmPassword()" placeholder="密码长度在6-12之间" />
+										<span class="default" id="conPasswordErr">*</span>
 									</li>
 									<li>
 										<label class="lab_head"></label>
-										<div class="next">
-											<a href="#">下一步</a>
+										<div class="next" id="rgt">
+											<a href="#">注册</a>
 										</div>
 									</li>
 								</ul>
@@ -212,6 +219,7 @@
 	</body>
 </html>
 <script src="src/js/random.js" type="text/javascript" charset="utf-8"></script>
+		//随机验证码
 		<script type="text/javascript">
 			$id("rd").innerHTML = yzm();
 			$id("rd").onclick = function(){
